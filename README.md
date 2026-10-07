@@ -38,4 +38,5 @@ Files are named `NNNN-problem-name.ext`, e.g. `0001-two-sum.py`.
 |  |
 | ------- |
 | [1661-average-time-of-process-per-machine](https://github.com/Hossam-X/leetcode-solutions/tree/master/1661-average-time-of-process-per-machine) |
+| [1757-recyclable-and-low-fat-products](https://github.com/Hossam-X/leetcode-solutions/tree/master/1757-recyclable-and-low-fat-products) |
 <!---LeetCode Topics End-->
