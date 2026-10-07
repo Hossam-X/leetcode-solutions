@@ -1,1 +1,38 @@
 
+name: Organize problems
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Move problems by difficulty
+        run: |
+          for d in [0-9]*/; do
+            [ -d "$d" ] || continue
+            d=${d%/}
+            readme="$d/README.md"
+            [ -f "$readme" ] || continue
+            if grep -q "<h3>Easy</h3>" "$readme"; then
+              target="easySQL"
+            elif grep -q "<h3>Medium</h3>" "$readme"; then
+              target="mediumSQL"
+            elif grep -q "<h3>Hard</h3>" "$readme"; then
+              target="hardSQL"
+            else
+              continue
+            fi
+            mkdir -p "$target"
+            mv "$d" "$target/$d"
+          done
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git add -A
+            git commit -m "Organize problems by difficulty"
+            git push
+          fi
