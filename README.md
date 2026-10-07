@@ -38,6 +38,7 @@ Files are named `NNNN-problem-name.ext`, e.g. `0001-two-sum.py`.
 |  |
 | ------- |
 | [0197-rising-temperature](https://github.com/Hossam-X/leetcode-solutions/tree/master/0197-rising-temperature) |
+| [0570-managers-with-at-least-5-direct-reports](https://github.com/Hossam-X/leetcode-solutions/tree/master/0570-managers-with-at-least-5-direct-reports) |
 | [0584-find-customer-referee](https://github.com/Hossam-X/leetcode-solutions/tree/master/0584-find-customer-referee) |
 | [0595-big-countries](https://github.com/Hossam-X/leetcode-solutions/tree/master/0595-big-countries) |
 | [1068-product-sales-analysis-i](https://github.com/Hossam-X/leetcode-solutions/tree/master/1068-product-sales-analysis-i) |
