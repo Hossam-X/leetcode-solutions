@@ -31,3 +31,11 @@ Files are named `NNNN-problem-name.ext`, e.g. `0001-two-sum.py`.
 ## Connect
 
 - LinkedIn: [hossam-mohamed](https://linkedin.com/in/hossam-mohamed-527b61263)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Database
+|  |
+| ------- |
+| [1661-average-time-of-process-per-machine](https://github.com/Hossam-X/leetcode-solutions/tree/master/1661-average-time-of-process-per-machine) |
+<!---LeetCode Topics End-->
